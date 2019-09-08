@@ -41,7 +41,24 @@
     margin: 0;
     padding: 0;
     background: #373737;
-    list-style: none; }
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: #444;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/mel.jpg");
+      background-size: cover;
+      border-radius: 50%;
+      border: solid 3px #eece1a; }
 
 * {
   box-sizing: border-box; }
